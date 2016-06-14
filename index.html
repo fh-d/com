@@ -14,17 +14,23 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css" />
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body>
     <!-- Intro -->
     <!-- Navigation -->
     <header class="intro"  data-vide-bg="content/video.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
       <div class="intro-body">
-        <div id="logosvg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="lg-12">
+        <div id="logosvg" class="intro"></div>
+          </div>
+        </div>
+      </div>
       </div>
     </header>
     <!-- Start content -->
     <!-- Intro Josette -->
-    <section id="intro-josette" class="grey">
+    <section id="apropos-josette" class="grey">
       <nav id="cd-vertical-nav">
         <ul>
           <li>
@@ -76,8 +82,7 @@
       <div class="container">
         <h1 class="text-center">Ce que nous offrons </h1>
         <div class="row no-gutter ">
-          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo">
-            <img class="img-responsive" src="content/branding.gif">
+          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo "  data-vide-bg="content/BRANDING-FINAL_1.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">        
           </div>
           <div class="col-xs-12 col-lg-6 col-sm-6 grey  repadded foo">
             <div class="content">
@@ -93,14 +98,11 @@
               <p>A team will be made up of handpicked experts from our studio, tailored to the project’s needs. If your requirements change, the team changes.</p>
             </div>
           </div>
-          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo">
-            <img class="img-responsive" src="content/strategie.gif">
+          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo "  data-vide-bg="content/STRATEGIE-FINAL_1.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
           </div>
         </div>
         <div class="row no-gutter ">
-          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo">
-            <img class="img-responsive" src="content/contenu.gif">
-          </div>
+          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo "  data-vide-bg="content/CONTENU-FINAL_1.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">          </div>
           <div class="col-xs-12 col-lg-6 col-sm-6 grey repadded foo">
             <div class="content">
               <h2 class="right">Contenu</h2>
@@ -115,8 +117,7 @@
               <p>A team will be made up of handpicked experts from our studio, tailored to the project’s needs. If your requirements change, the team changes.</p>
             </div>
           </div>
-          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo">
-            <img class="img-responsive" src="content/digital.gif">
+          <div class="col-xs-hidden col-lg-6 col-sm-6 repadded foo "  data-vide-bg="content/DIGITAL-FINAL_1.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
           </div>
         </div>
       </div>
@@ -126,90 +127,143 @@
     <section id="folio">
       <div class="container">
         <h1 class="text-center">Les projets</h1>
-        <div id="grid" data-columns></div>
         <figure class="folio-grid" data-columns>
-          <div class="column size-1of3 layout-redux foo">
-            <div class="item"><a><img style="width:100%;" class="img-responsive" src="content/folio/280580-1.png"></a></div>
-            <div class="item equal"><a><img class="img-responsive" style="width:100%;" src="content/folio/280280-1.png"></a></div>
-          </div>
-          <div class="column size-1of2 layout-redux foo">
-            <div class="item" >            <div class="hovereffect">
-              <img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png" alt="">
-              <div class="overlay">
-                <h2>Client</h2>
+          <div class="column size-1of3 layout-redux folio">
+            <div class="item rop">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280580-1.png">
+                <div class="overlay">
+                  <h2 class="info">Client</h2>
+                  <p>blablblblblbbla</p>
+                </div>
               </div>
-            </div></div>
-
-            <div class="item"><img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png"></div>
-            <div class="item"></div>
+            </div>
+            <div class="item">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="column size-1of1 layout-redux">
-            <div class="item"><img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png"></div>
+          <div class="column size-1of2 layout-redux foliotwo">
+            <div class="item" >
+              <div class="hovereffect">
+                <img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png" alt="">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column size-1of1 layout-redux foliotwo">
+            <div class="item" >
+              <div class="hovereffect">
+                <img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png" alt="">
+                <div class="overlay">
+                  <h2>Client</h2>
+                  <p>blablblblblbbla</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column size-1of2 layout-redux foliotwo">
+            <div class="item" >
+              <div class="hovereffect">
+                <img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png" alt="">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column size-1of3 layout-redux folio">
+            <div class="item rop">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280580-1.png">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="hovereffect">
+                <img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png">
+                <div class="overlay">
+                  <h2>Client</h2>
+                </div>
+              </div>
+            </div>
             
           </div>
-          <div class="column size-1of3 layout-redux foo">
-            <div class="item"><img style="width:100%;" class="img-responsive" src="content/folio/280580-1.png"></div>
-            <div class="item equal" ><img class="img-responsive" style="width:100%;" src="content/folio/280280-1.png"></div>
-          </div> 
-          <div class="column size-1of2 layout-redux">
-            <div class="item"><img class="img-responsive" style="width:100%;" src="content/folio/580260-1.png"></div>
-            <div class="item"><img style="width:100%;" class="img-responsive" src="content/folio/280280-1.png"></div>
-          </div>
-          
-        </div>
-      </figure>
-    </div>
-  </section>
-  <!-- Fin Folio-->
-  <!-- Section Clients-->
-  <section id="clients">
-
-</section>
-<!-- Fin Clients-->
-<!-- end content -->
-<!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/vivus/dist/vivus.js"></script>
-<script src="bower_components/vide/dist/jquery.vide.js"></script>
-<script src="bower_components/Flowtype.js/flowtype.js"></script>
-<script src="bower_components/scrollreveal/dist/scrollreveal.js"></script>
-<!-- endbower -->
-<!-- SCRIPT -->
-<script type="text/javascript"></script>
-<script>
-var grid = document.querySelector('.folio-grid');
-var item = document.createElement('article');
-salvattore.appendElements(grid, [item]);
-</script>
-<script>window.sr = ScrollReveal({ reset: true });;
-sr.reveal('.foo', { duration: 500, scale: 0.8, delay: 200, opacity: 0});
-</script>
-<script>
-$('body').flowtype({
-minimum   : 500,
-maximum   : 800,
-minFont   : 14,
-maxFont   : 30,
-fontRatio : 30
-});
-</script>
-<script>
-new Vivus('logosvg',  {
-type: 'scenario',
-duration:50,
-animTimingFunction: Vivus.EASE,
-selfDestroy: true,
-file: 'logo.svg',
-
-
-}, function doDone(obj) {
-obj.el.classList.add('finished');
-});
-</script>
-<!-- Scrolling Nav JavaScript -->
-<script src="js/main.js"></script> <!-- SmoothScroll -->
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
-<!-- ENDSCRIPT -->
-</body>
+        </figure>
+      </div>
+    </section>
+    <!-- Fin Folio-->
+    <!-- Section Clients-->
+    <section id="clients">
+    </section>
+    <!-- Fin Clients-->
+    <!-- end content -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/vivus/dist/vivus.js"></script>
+    <script src="bower_components/vide/dist/jquery.vide.js"></script>
+    <script src="bower_components/Flowtype.js/flowtype.js"></script>
+    <script src="bower_components/scrollreveal/dist/scrollreveal.js"></script>
+    <!-- endbower -->
+    <!-- SCRIPT -->
+    <script>
+    var grid = document.querySelector('.folio-grid');
+    var item = document.createElement('article');
+    salvattore.appendElements(grid, [item]);
+    </script>
+    <script>window.sr = ScrollReveal({  });;
+    sr.reveal('.foo', { duration: 400, scale: 0.8, delay: 100, opacity: 0});
+    sr.reveal('.folio', { duration: 900, delay: 0, opacity: 0.6});
+    sr.reveal('.foliotwo', { duration: 500, delay: 0, opacity: 0.6});
+    </script>
+    <script>
+    $('body').flowtype({
+    minimum   : 500,
+    maximum   : 800,
+    minFont   : 14,
+    maxFont   : 30,
+    fontRatio : 30
+    });
+    </script>
+    <script>
+    new Vivus('logosvg',  {
+    type: 'scenario',
+    duration:50,
+    animTimingFunction: Vivus.EASE,
+    selfDestroy: true,
+    file: 'logo.svg',
+    }, function doDone(obj) {
+    obj.el.classList.add('finished');
+    });
+    </script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/main.js"></script> <!-- SmoothScroll -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <!-- ENDSCRIPT -->
+  </body>
 </html>

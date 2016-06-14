@@ -1,5 +1,5 @@
 @font-face { font-family: Geomanist; src: url('../fonts/Geomanist-Medium.otf'); }
-@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf');}
+
 body{
     width: 100%;
     height: 100%;
@@ -34,20 +34,7 @@ html {
 /* --------------------------------
 Main components  NAV
 -------------------------------- */
-.cd-section {
-    min-height: 100%;
-    position: relative;
-    padding: 2em 0;
-}
-.cd-section:nth-of-type(odd) {
-    background-color: #3e3947;
-}
-.cd-section:nth-of-type(odd) p {
-    color: #898099;
-}
-.cd-section:nth-of-type(even) {
-    background-color: #745360;
-}
+
 .cd-section:nth-of-type(even) p {
     color: #bda3ad;
 }
@@ -146,12 +133,14 @@ Main components  NAV
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+    background-color: #1C1C1C;
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
     opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-    background-color: white;
+    background-color: #FFF;
+
 }
 .no-touch #cd-vertical-nav .cd-dot {
     position: relative;
@@ -160,7 +149,7 @@ Main components  NAV
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #9E9E9E;
+    background-color: #E0E0E0;
     -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
     -moz-transition: -moz-transform 0.2s, background-color 0.5s;
     transition: transform 0.2s, background-color 0.5s;
@@ -169,14 +158,23 @@ Main components  NAV
     -ms-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    }ol, ul {
+    }
+    ol, ul {
         list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
     }
     .no-touch #cd-vertical-nav .cd-label {
         position: relative;
-        margin-right: 10px;
-        padding: .1em .5em;
-        color: #000;
+        margin-right: 15px;
+        padding: .15em .5em;
+        color: #fafafa;
         font-size: 2rem;
         -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
         -moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -188,7 +186,7 @@ Main components  NAV
         -o-transform-origin: 100% 50%;
         transform-origin: 100% 50%;
     }
-    /* Touch devices */
+    /* Touch devices
     .touch .cd-nav-trigger {
         display: block;
         z-index: 2;
@@ -314,7 +312,7 @@ Main components  NAV
         .touch .cd-nav-trigger, .touch #cd-vertical-nav {
             bottom: 40px;
         }
-    }
+    } */
     /* FIN NAV */
     @media(min-width:768px) {
         .intro {
@@ -347,14 +345,14 @@ Main components  NAV
     .intro .intro-body .intro-text {
         font-size: 18px;
     }
-    #intro-josette p {
+    #apropos-josette p {
         color: #3c3c3c;
         padding: 2em;
         letter-spacing: .05em;
         text-align: center;
         line-height: 1.563em;
     }
-    #intro-josette{
+    #apropos-josette{
         padding: 89px 40px 45px;
         margin: 0 auto;
     }
@@ -405,7 +403,7 @@ Main components  NAV
     }
     #services .content {
         width: 80%;
-        padding: 20px;
+        padding: 50px 20px 50px 20px;
         margin: auto;
         vertical-align: middle;
     }
@@ -473,7 +471,9 @@ transition: all .4s;
     }
     .size-1of1 { width: 100%; height: 50%;}
     .size-1of2 { width: 100%; height: 50%;}
-    .size-1of3 { width: 100%; height: 50%;display:none;}
+    .size-1of3 { min-width: 50%; height: 33%; display: inline-flex;}
+    .rop { width: 66%; display: table-column;}
+    #cd-vertical-nav  { display:none;}
 }
 /* Again, you’re free to use and define the classes: */
 .hovereffect {
@@ -483,7 +483,9 @@ transition: all .4s;
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
 }
 .hovereffect .overlay {
     width: 100%;
@@ -497,24 +499,23 @@ transition: all .4s;
     padding: 1em;
     background: #FFF;
     color: #3c4a50;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
+    -webkit-transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
     -webkit-transform: translate3d(0,100%,0);
     transform: translate3d(0,100%,0);
 }
 .hovereffect img {
     display: block;
     position: relative;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-
+    -webkit-transition: -webkit-transform 2s;
+    transition: transform 2s;
 }
 .hovereffect:hover img {
     transform : scale(1.1);
-    transition-duration: 10s;
-    opacity: 0.5;
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    transition-duration: 8s;
+    opacity: 0.7;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .hovereffect h2 {
     color: #1C1C1C;
@@ -556,13 +557,7 @@ transition: all .4s;
     -webkit-transform: translate3d(0,200%,0);
     transform: translate3d(0,200%,0);
 }
-.hovereffect p.icon-links a span:before {
-    display: inline-block;
-    padding: 8px 10px;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 .hovereffect:hover .overlay,
 .hovereffect:hover h2,
 .hovereffect:hover p.icon-links a {
@@ -573,15 +568,5 @@ transition: all .4s;
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
-.hovereffect:hover p.icon-links a:nth-child(3) {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-.hovereffect:hover p.icon-links a:nth-child(2) {
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
-}
-.hovereffect:hover p.icon-links a:first-child {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
+
+
