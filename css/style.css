@@ -133,7 +133,7 @@ Main components  NAV
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    background-color: #1C1C1C;
+    background-color: #171717;
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
     opacity: 1;
@@ -370,9 +370,7 @@ Main components  NAV
     #logosvg{
         width: 10em;
     }
-    .row {
-        display: table;
-    }
+
     [class*="col-"] {
         float: none;
         display: table-cell;
@@ -383,7 +381,7 @@ Main components  NAV
         width: 100%;
     }
     h1 {
-        color: #1C1C1C;
+        color: #171717;
         letter-spacing: .05em;
         text-align: center;
         line-height: 3.5em;
@@ -392,7 +390,7 @@ Main components  NAV
         align-self: center;
     }
     #services h2 {
-        color: #1C1C1C;
+        color: #171717;
         letter-spacing: .05em;
         line-height: 2em;
         font-weight: bold;
@@ -520,7 +518,7 @@ transition: all .4s;
     pointer-events: none;
 }
 .hovereffect h2 {
-    color: #1C1C1C;
+    color: #171717;
     position: relative;
     padding: 10px;
     float: left;
@@ -571,4 +569,154 @@ transition: all .4s;
     transition-delay: 0.05s;
 }
 
+/* Clients: */
 
+.spacer{
+    margin-top: 5em;
+    padding-bottom: 5em;
+    background-color: #171717;
+}
+#clients h1{
+    color: #FFF;
+}
+.thumb {
+    margin-bottom: 30px;
+}
+.boxed {
+    border: 2px solid #3C3C3C;
+    margin: 1em;
+    padding:0.2em;
+}
+
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+
+input[type='text'], [type='email'], select, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #EEEEEE;
+    font-family: Geomanist;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 0.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 1em 0;
+    color:white;
+    background-color: black;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+
+textarea {
+    line-height: 110%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder { 
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: black;
+  color: white;
+}
