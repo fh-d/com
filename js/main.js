@@ -115,3 +115,10 @@ new Vivus('logosvg', {
 }, function doDone(obj) {
     obj.el.classList.add('finished');
 });
+
+
+$('.first').addClass('animated fadeInUp');
+
+setTimeout(function () {
+    $('.second').show().addClass('animated fadeInUp');}, 1500
+);
