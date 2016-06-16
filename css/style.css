@@ -314,18 +314,7 @@ Main components  NAV
         }
     } */
     /* FIN NAV */
-    @media(min-width:768px) {
-        .intro {
-            height: 100%;
-            padding: 0;
-        }
-        .intro .intro-body .brand-heading {
-            font-size: 100px;
-        }
-        .intro .intro-body .intro-text {
-            font-size: 26px;
-        }
-    }
+
     .intro {
         display: table;
         width: 100%;
@@ -335,16 +324,64 @@ Main components  NAV
         color: #fff;
         z-index: 50;
     }
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 40px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 18px;
-    }
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/header.jpg');
+  text-align: center;
+  color: white;
+}
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
     #apropos-josette p {
         color: #3c3c3c;
         padding: 2em;
@@ -520,13 +557,12 @@ transition: all .4s;
 .hovereffect h2 {
     color: #171717;
     position: relative;
-    padding: 10px;
-    float: left;
+    text-align: center;
     margin: 0px;
-    display: inline-block;
     letter-spacing: .05em;
-    line-height: 2em;
     font-weight: bold;
+    top: 50%;
+    font-family: Geomanist;
 }
 .hovereffect a.info {
     display: inline-block;
@@ -568,7 +604,34 @@ transition: all .4s;
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }
-
+            .arrow {
+                width: 20px;
+                height: 20px;
+                border-color: #000;
+                display: absolute;
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                bottom: 10%;
+                /*cursor: pointer;*/
+            }
+            .arrow:hover {
+                border-color: #ccc;
+            }
+            .left.arrow {
+                -ms-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .right.arrow {
+                -ms-transform: rotate(225deg);
+                -webkit-transform: rotate(225deg);
+                transform: rotate(225deg);
+            }
 /* Clients: */
 
 .spacer{
@@ -720,3 +783,5 @@ textarea {
   background: black;
   color: white;
 }
+
+    footer {width:100%; height:360px;background-color:#262932; position:fixed; bottom:0; left:0; color: #ef4a4a; text-align:center; z-index:0;}
