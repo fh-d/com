@@ -2,6 +2,7 @@
     font-family: Geomanist-Medium;
     src: url('../fonts/Geomanist-Medium.otf');
 }
+
 @font-face {
     font-family: Geomanist-Regular;
     src: url('../fonts/Geomanist-Regular.otf');
@@ -34,16 +35,17 @@ h1 {
 
 h2 {
     font-size: 1em;
-        font-family: Geomanist-Medium;
-
+    font-family: Geomanist-Medium;
 }
+
 h3 {
     font-size: 0.7em;
-        font-family: Geomanist-Regular;
-
+    font-family: Geomanist-Regular;
 }
+
 .intro h3 {
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 
 p {
     font-size: 0.70em;
@@ -69,16 +71,20 @@ html {
 /* --------------------------------
 Main components  NAV
 -------------------------------- */
+
 .mousescroll {
     position: absolute;
-    left : calc(50% - 40px);
-    bottom : 20px;
+    left: calc(50% - 40px);
+    bottom: 20px;
 }
 
+
 /* No Touch devices */
+
 a.is-selected .cd-dot {
-  background-color: black;
+    background-color: black;
 }
+
 .cd-nav-trigger {
     display: none;
 }
@@ -566,12 +572,14 @@ transition: all .4s;
 .size-1of3 {
     width: 33.333%;
 }
-/* RESPONSIVE  */ 
+
+/* RESPONSIVE  */
 @media screen and (max-width: 690px) {}
 @media screen and (max-width: 768px) {
     .layout-redux {
         width: inherit;
     }
+    
     .size-1of1 {
         width: 100%;
         height: 50%;
@@ -774,7 +782,6 @@ textarea:focus {
     float: left;
     width: 45%;
 }
-
 .subject {
     width: 100%;
 }
@@ -843,4 +850,3 @@ textarea {
     text-decoration: none;
     letter-spacing: 0.05em;
 }
-
